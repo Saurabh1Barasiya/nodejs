@@ -19,13 +19,8 @@ async function main() {
     // console.log(collection); 
      
     // fetch all the data 
-
-    const allData = await collection.find({}).toArray();
+    const allData = await fetchAllData(collection);
     console.log(allData);
-
-
-
-
 }
 
 main()
